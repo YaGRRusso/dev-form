@@ -1,10 +1,11 @@
-import * as C from './App.style'
+import { FormProvider } from "./context/FormContext"
+import { RouteList } from "./router"
 
 const App = () => {
   return (
-    <C.Container>
-      Hello World
-    </C.Container>
+    <FormProvider>
+      <RouteList />
+    </FormProvider>
   )
 }
 
