@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { FormTitle } from '../../components/FormTitle'
@@ -12,7 +12,7 @@ export const SecondStep = () => {
     const { state, dispatch } = useForm()
 
     useEffect(() => {
-        if (!state.name) {
+        if (state.name.length < 3) {
             navigate('/')
         } else {
             dispatch({ type: FormAction.setCurrentStep, payload: 2 })

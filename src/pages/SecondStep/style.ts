@@ -1,23 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    label{
-        font-size: 13px;
-
-        input{
-            display: block;
-            margin-top: 7px;
-            box-sizing: border-box;
-            width: 100%;
-            padding: 20px 10px;
-            border: 1px solid #25cd89;
-            border-radius: 10px;
-            color: #fff;
-            outline: none;
-            font-size: 16px;
-            background-color: transparent;
-        }
-    }
     button{
         background-color: #25cd89;
         color: #fff;
